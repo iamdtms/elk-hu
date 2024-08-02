@@ -1,2 +1,2 @@
 # elk-hu
-Elk Hungarian Landing Page
+Elk Hungarian Page
