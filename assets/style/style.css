@@ -203,6 +203,12 @@ header {
     /*background-color: rgba(255,255,255,.25);
     box-shadow: 0 0 3px white;*/
   }
+  strong {
+    font-weight: inherit;
+    color: black;
+    font-style: italic;
+    letter-spacing: -2px;
+  }
   .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     font-weight: 600;
     background-color: transparent;
@@ -288,6 +294,11 @@ main p:last-child {
 main p img.preview {
   float: right;
   margin: 0 0 1rem 1rem;
+  border: 1px solid rgba(0,0,0,.5);
+  box-shadow: 0 0 1rem rgba(0,0,0,.5);
+  padding: 10px;
+  margin-block: 1rem;
+  display: block;
 }
 
 .nav-link {
@@ -296,9 +307,18 @@ main p img.preview {
 
   &.active {
     font-size: 600 !important;
-    background-color: black !important;
+    background-color: #683714 !important;
     color: white !important;
     text-shadow: none !important;
+  }
+}
+
+@media (max-width: 800px) {
+  main p img.preview {
+    margin-inline: auto;
+    float: none;
+    text-align: center;
+    width: 100%;
   }
 }
 
