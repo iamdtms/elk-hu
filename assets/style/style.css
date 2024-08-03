@@ -285,6 +285,11 @@ main p:last-child {
   margin-block-end: 0;
 }
 
+main p img.preview {
+  float: right;
+  margin: 0 0 1rem 1rem;
+}
+
 .nav-link {
   background-color: rgba(255,255,255,.15) !important;
   margin-block-end: .5rem;
