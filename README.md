@@ -1,2 +1,2 @@
 # elk-hu
-A nimble Mastodon web client - Hungarian Page
+Elk Magyarország: Egy fürge Mastodon kliens
