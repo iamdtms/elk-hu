@@ -306,8 +306,6 @@ main p:last-child {
     display: block !important;
   }
   header.page a span {
-    background-color: rgba(0,0,0,0);
-    color: black;
     display: block;
   }
 }
