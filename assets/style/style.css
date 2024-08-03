@@ -301,7 +301,7 @@ main img.preview {
 }
 
 .nav-link {
-  background-color: rgba(255,255,255,.15) !important;
+  background-color: rgba(255,255,255,.35) !important;
   margin-block-end: .5rem;
 
   &.active {
