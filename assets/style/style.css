@@ -291,13 +291,12 @@ main p:last-child {
   margin-block-end: 0;
 }
 
-main p img.preview {
+main img.preview {
   float: right;
   margin: 0 0 1rem 1rem;
   border: 1px solid rgba(0,0,0,.5);
   box-shadow: 0 0 1rem rgba(0,0,0,.5);
   padding: 10px;
-  margin-block: 1rem;
   display: block;
 }
 
@@ -313,8 +312,14 @@ main p img.preview {
   }
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  gap: 1rem;
+}
+
 @media (max-width: 800px) {
-  main p img.preview {
+  main img.preview {
     margin-inline: auto;
     float: none;
     text-align: center;
@@ -332,5 +337,11 @@ main p img.preview {
   }
   header.page a span {
     display: block;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    gap: 1rem;
   }
 }
