@@ -125,7 +125,7 @@ main a {
   border-radius: 2px;
   display: inline-block;
   text-decoration: none;
-  transition: all 1s;
+  transition: all .5s;
 
   &:hover,
   &:active {
@@ -271,6 +271,7 @@ footer hr {
 footer a {
   color: #f4c5a3;
   font-weight: 600;
+  text-decoration: none;
 
   &:hover,
   &:active,
@@ -298,7 +299,7 @@ main p:last-child {
 }
 
 main img.preview {
-  margin: 0 0 0 1rem;
+  margin: 0 1rem 0 0;
   border: 1px solid rgba(0,0,0,.5);
   box-shadow: 0 0 1rem rgba(0,0,0,.5);
   padding: 10px;
@@ -308,12 +309,19 @@ main img.preview {
 .nav-link {
   background-color: rgba(255,255,255,1) !important;
   margin-block-end: .5rem;
+  transition: all .5s;
 
   &.active {
     font-size: 600 !important;
     background-color: #683714 !important;
     color: white !important;
     text-shadow: none !important;
+  }
+
+  &:hover,
+  &:active {
+    background-color: black !important;
+    color: white !important;
   }
 }
 
