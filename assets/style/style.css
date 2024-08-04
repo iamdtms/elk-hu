@@ -334,6 +334,14 @@ main img.preview {
   }
 }
 
+ol.list {
+  &:after {
+    content: '...';
+    font-weight: 500;
+    display: block;
+  }
+}
+
 .grid {
   display: grid;
   grid-template-columns: auto auto;
