@@ -122,6 +122,7 @@ main a {
   background-color: #683714;
   color: white;
   padding: 0 2px;
+  margin: 2px 0;
   border-radius: 2px;
   display: inline-block;
   text-decoration: none;
@@ -150,6 +151,7 @@ hr {
   padding: 2rem;
   /*margin: 1rem;*/
   border-radius: 1rem 0 1rem 0;
+  line-height: 1.5;
 
   img {
     max-width: 100%;
@@ -246,6 +248,10 @@ footer h1 {
 
 footer p {
   text-align: center;
+
+  a {
+    color: black;
+  }
 }
 
 footer.page {
@@ -258,10 +264,6 @@ footer p:last-child {
   text-align: left;
   padding: .5rem;
   border-radius: .5rem;
-
-  a {
-    color: #f4c5a3;
-  }
 }
 
 footer hr {
@@ -278,6 +280,13 @@ footer a {
   &:focus {
     color: white;
   }
+}
+
+footer p a {
+  color: white;
+  background-color: rgba(0,0,0,.5);
+  padding: 0 2px;
+  border-radius: 2px;
 }
 
 .logo img {
