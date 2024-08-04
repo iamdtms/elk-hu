@@ -118,13 +118,19 @@ body {
   font-weight: 300;
 }
 
-a {
-  color: #fbfbfb;
+main a {
+  background-color: #683714;
+  color: white;
+  padding: 0 2px;
+  border-radius: 2px;
+  display: inline-block;
   text-decoration: none;
+  transition: all 1s;
 
   &:hover,
   &:active {
-    text-decoration: underline;
+    color: white;
+    background-color: black;
   }
 }
 
@@ -314,7 +320,7 @@ main img.preview {
 
 .grid {
   display: grid;
-  grid-template-columns: 65% 35%;
+  grid-template-columns: auto auto;
   gap: 1rem;
 }
 
