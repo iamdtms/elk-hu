@@ -293,7 +293,7 @@ main p:last-child {
 
 main img.preview {
   float: right;
-  margin: 0 0 1rem 1rem;
+  margin: 0 0 0 1rem;
   border: 1px solid rgba(0,0,0,.5);
   box-shadow: 0 0 1rem rgba(0,0,0,.5);
   padding: 10px;
@@ -321,7 +321,6 @@ main img.preview {
 @media (max-width: 800px) {
   main img.preview {
     margin-inline: auto;
-    margin-block-end: 0;
     float: none;
     text-align: center;
     width: 100%;
