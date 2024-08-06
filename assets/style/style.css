@@ -348,6 +348,10 @@ ol.list {
   gap: 1rem;
 }
 
+code {
+  display: inline;
+}
+
 @media (max-width: 800px) {
   main img.preview {
     margin-inline: auto;
