@@ -127,6 +127,7 @@ main a {
   display: inline-block;
   text-decoration: none;
   transition: all .5s;
+  font-family: monospace;
 
   &:hover,
   &:active {
@@ -155,6 +156,10 @@ hr {
 
   img {
     max-width: 100%;
+  }
+
+  li a {
+    font-family: "Poppins", sans-serif;
   }
 }
 
@@ -334,7 +339,8 @@ main img.preview {
   }
 }
 
-ol.list {
+ol {
+  font-family: monospace;
   &:after {
     content: '...';
     font-weight: 500;
