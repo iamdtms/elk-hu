@@ -124,7 +124,7 @@ main a {
   padding: 0 2px;
   margin: 2px 0;
   border-radius: 2px;
-  display: inline-block;
+  /*display: inline-block;*/
   text-decoration: none;
   transition: all .5s;
   font-family: monospace;
