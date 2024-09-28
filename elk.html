@@ -3,6 +3,16 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="
+      default-src 'self' 'unsafe-inline';
+      font-src fonts.gstatic.com 'self' *.fontawesome.com;
+      style-src fonts.googleapis.com 'self' 'unsafe-inline' *.fontawesome.com;
+      script-src 'self' *.fontawesome.com *.umami.is 'unsafe-inline' 'unsafe-eval';
+      script-src-elem 'self' 'unsafe-inline' *.fontawesome.com *.umami.is iamdtms.hu iamdtms.netlify.app;
+      img-src 'self' elk-hu.netlify.app data:;
+      manifest-src 'self' elk-hu.netlify.app;
+      connect-src 'self' 'unsafe-inline' *.umami.is *.umami.dev *.fontawesome.com;
+      object-src 'none';">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta property="og:title" content="Elk Magyarország: Egy fürge Mastodon kliens">
   <meta property="og:description" content="Hungarian Page">
