@@ -126,7 +126,7 @@ main a {
   border-radius: 2px;
   /*display: inline-block;*/
   text-decoration: none;
-  transition: all .5s;
+  transition: all 0.5s;
   font-family: monospace;
 
   &:hover,
@@ -164,23 +164,29 @@ hr {
 }
 
 .container {
-  margin-block: .5rem;
+  margin-block: 0.5rem;
   max-inline-size: 980px;
   border-radius: 1rem 0 1rem 0;
   margin-inline: auto;
-  padding-block-end: .1rem;
-  box-shadow: 0 0 1rem rgba(0,0,0,.5);
-  background-color: rgba(0,0,0,.5);
+  padding-block-end: 0.1rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 header {
-  background: linear-gradient(90deg, white 0%, #f4c5a3 40%, #f4c5a3  50%, white 100%);
+  background: linear-gradient(
+    90deg,
+    white 0%,
+    #f4c5a3 40%,
+    #f4c5a3 50%,
+    white 100%
+  );
   border-radius: 1rem 0 1rem 0;
   /*border-block-end: .25rem solid rgba(0,0,0,0);*/
   &.page {
     /*margin-inline-start: 1rem;*/
     position: relative;
-    top: .5rem;
+    top: 0.5rem;
     letter-spacing: -1px;
     font-size: 2rem;
     color: #111;
@@ -199,7 +205,7 @@ header {
       color: black;
     }
     &:active {
-      color: rgba(255,255,255,.1);
+      color: rgba(255, 255, 255, 0.1);
     }
   }
   &.page a span {
@@ -209,7 +215,7 @@ header {
     font-size: 1.2rem;
     color: #c16929;
     /*background-color: rgba(255,255,255,.5);*/
-    padding: .25rem 1rem;
+    padding: 0.25rem 1rem;
     border-radius: 2rem;
     text-shadow: 0 1px 1px white;
     font-weight: 500;
@@ -222,7 +228,8 @@ header {
     font-weight: 300;
     letter-spacing: -2px;
   }
-  .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  .nav-pills .nav-link.active,
+  .nav-pills .show > .nav-link {
     font-weight: 600;
     background-color: transparent;
     color: #111;
@@ -231,20 +238,26 @@ header {
 }
 
 footer {
-  background: linear-gradient(90deg, black 0%, #f4c5a3 40%, #f4c5a3  50%, black 100%);
+  background: linear-gradient(
+    90deg,
+    black 0%,
+    #f4c5a3 40%,
+    #f4c5a3 50%,
+    black 100%
+  );
   border-radius: 1rem 0 1rem 0;
   padding: 1rem 1rem 0;
   margin-block-end: 1rem;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 footer hr {
-    color: white;
-    /*margin-inline: 1rem;*/
-    margin-block: 0;
-    border-width: 0;
-    block-size: 1px;
-    background-color: rgba(0,0,0,1);
+  color: white;
+  /*margin-inline: 1rem;*/
+  margin-block: 0;
+  border-width: 0;
+  block-size: 1px;
+  background-color: rgba(0, 0, 0, 1);
 }
 
 footer h1 {
@@ -257,6 +270,9 @@ footer p {
   a {
     color: black;
   }
+  :last-child {
+    text-align: center;
+  }
 }
 
 footer.page {
@@ -266,9 +282,10 @@ footer.page {
 footer p:last-child {
   margin-block-end: 1rem;
   /*background-color: black;*/
-  text-align: left;
-  padding: .5rem;
-  border-radius: .5rem;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  color: black;
 }
 
 footer hr {
@@ -287,9 +304,13 @@ footer a {
   }
 }
 
+footer p:last-child a:last-child {
+  background-color: black;
+}
+
 footer p a {
   color: white;
-  background-color: rgba(0,0,0,.5);
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 0 2px;
   border-radius: 2px;
 }
@@ -314,16 +335,16 @@ main p:last-child {
 
 main img.preview {
   margin: 0 1rem 0 0;
-  border: 1px solid rgba(0,0,0,.5);
-  box-shadow: 0 0 1rem rgba(0,0,0,.5);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
   padding: 10px;
   display: block;
 }
 
 .nav-link {
-  background-color: rgba(255,255,255,1) !important;
-  margin-block-end: .5rem;
-  transition: all .5s;
+  background-color: rgba(255, 255, 255, 1) !important;
+  margin-block-end: 0.5rem;
+  transition: all 0.5s;
 
   &.active {
     font-size: 600 !important;
@@ -342,7 +363,7 @@ main img.preview {
 ol {
   font-family: monospace;
   &:after {
-    content: '...';
+    content: "...";
     font-weight: 500;
     display: block;
   }
