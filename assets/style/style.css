@@ -341,8 +341,14 @@ main h2 {
   letter-spacing: 2px;
   display: inline-block;
   font-weight: 900;
-  block-size: 2rem;
-  border-radius: 1rem;
+}
+
+main h3 {
+  font-size: 1.2rem;
+  margin-block: 1rem;
+  letter-spacing: 1px;
+  display: inline-block;
+  font-weight: 900;
 }
 
 main p:last-child {
