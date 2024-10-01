@@ -304,7 +304,7 @@ footer a {
   }
 }
 
-footer p:last-child a:last-child {
+footer p:last-child a:nth-child(1) {
   background-color: black;
 }
 
