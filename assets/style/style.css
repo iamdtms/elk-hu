@@ -128,7 +128,7 @@ main a {
   text-decoration: none;
   transition: all 0.5s;
   font-family: "Courier New", monospace;
-  font-weight: 600;
+  /*font-weight: 600;*/
 
   &:hover,
   &:active {
