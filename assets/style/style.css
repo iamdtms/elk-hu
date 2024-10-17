@@ -384,12 +384,15 @@ main img.preview {
 
 ol {
   font-family: "Courier New", monospace;
-  font-weight: 600;
   &:after {
     content: "...";
     font-weight: 500;
     display: block;
   }
+}
+
+.mono {
+  font-family: "Courier New", monospace;
 }
 
 .grid {
