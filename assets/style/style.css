@@ -302,16 +302,27 @@ footer a {
   color: #f4c5a3;
   font-weight: 600;
   text-decoration: none;
+  transition: 1s all;
 
   &:hover,
   &:active,
   &:focus {
+    background-color: black;
     color: white;
   }
 }
 
 footer p:last-child a:nth-child(1) {
   background-color: black;
+  background-color: black;
+  color: #f4c5a3;
+}
+
+footer p span {
+  background-color: white;
+  border-radius: 2px;
+  padding: 3px;
+  display: inline-block;
 }
 
 footer p a {
