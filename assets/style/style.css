@@ -203,12 +203,12 @@ header {
     /*margin-block-start: 1rem;*/
     margin-inline-start: 1rem;
     font-size: 1.3rem;
-    text-shadow: 0 1px 1px white;
     border-radius: 2rem;
 
     &:hover,
     &:focus {
       color: black;
+      box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
     }
     &:active {
       color: rgba(255, 255, 255, 0.1);
@@ -236,7 +236,6 @@ header {
   }
   .nav-pills .nav-link.active,
   .nav-pills .show > .nav-link {
-    font-weight: 600;
     background-color: transparent;
     color: #111;
     text-shadow: 0 1px 1px white;
@@ -307,8 +306,14 @@ footer a {
   &:hover,
   &:active,
   &:focus {
-    background-color: black;
-    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  &.active {
+    background-color: white;
+    color: black;
+    padding: 0 2px;
   }
 }
 
@@ -380,10 +385,8 @@ main img.preview {
   transition: all 0.5s;
 
   &.active {
-    font-size: 600 !important;
-    background-color: #683714 !important;
+    background-color: #c16929 !important;
     color: white !important;
-    text-shadow: none !important;
   }
 
   &:hover,
