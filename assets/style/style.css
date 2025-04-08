@@ -445,3 +445,13 @@ code {
     gap: 1rem;
   }
 }
+
+@media (max-width: 540px) {
+  footer p span,
+  footer p a {
+    width: 100%;
+  }
+  footer p a {
+    display: block;
+  }
+}
