@@ -398,6 +398,11 @@ main img.preview {
 
 ol {
   font-family: "Courier New", monospace;
+
+  a.mono {
+    font-family: "Courier New", monospace;
+  }
+
   &:after {
     content: "...";
     font-weight: 500;
