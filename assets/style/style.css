@@ -189,8 +189,10 @@ header {
     #f4c5a3 50%,
     white 100%
   );
+
   border-radius: 1rem 0 1rem 0;
   /*border-block-end: .25rem solid rgba(0,0,0,0);*/
+
   &.page {
     /*margin-inline-start: 1rem;*/
     position: relative;
@@ -271,14 +273,13 @@ footer h1 {
   font-size: 1rem;
 }
 
-footer p {
-  text-align: center;
+footer {
+  p {
+    text-align: center;
+  }
 
   a {
     color: black;
-  }
-  :last-child {
-    text-align: center;
   }
 }
 
@@ -422,18 +423,6 @@ ol {
   gap: 1rem;
 }
 
-@media (max-width: 650px) {
-  .grid {
-    > div:first-child {
-      grid-row: 2;
-    }
-
-    > div:last-child {
-      grid-row: 1;
-    }
-  }
-}
-
 code {
   display: inline;
 }
@@ -447,6 +436,14 @@ code {
 }
 
 @media (max-width: 650px) {
+  .grid > div {
+    &:first-child {
+      grid-row: 2;
+    }
+    &:last-child {
+      grid-row: 1;
+    }
+  }
   header {
     text-align: center;
   }
