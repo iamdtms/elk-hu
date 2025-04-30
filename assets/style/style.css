@@ -123,12 +123,14 @@ main a {
   color: white;
   padding: 2px 4px;
   margin: 2px 0;
+  line-height: 1;
   border-radius: 2px;
   /*display: inline-block;*/
   text-decoration: none;
   transition: all 0.5s;
   font-family: "Courier New", monospace;
   /*font-weight: 600;*/
+  box-decoration-break: clone;
 
   &:hover,
   &:active {
@@ -418,6 +420,18 @@ ol {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
+}
+
+@media (max-width: 650px) {
+  .grid {
+    > div:first-child {
+      grid-row: 2;
+    }
+
+    > div:last-child {
+      grid-row: 1;
+    }
+  }
 }
 
 code {
