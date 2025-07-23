@@ -1,4 +1,4 @@
-# elk.hu & elk-hu.netlify.app
+# [elk.hu](https://elk.hu) & [elk-hu.netlify.app](https://elk-hu.netlify.app)
 ## Elk Magyarország: Egy fürge Mastodon kliens
 
 MIT License
